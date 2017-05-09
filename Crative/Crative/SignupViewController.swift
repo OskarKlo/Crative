@@ -54,13 +54,18 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         guard nameField.text != "", emailField.text != "", passwordField.text != "", comPwField.text != "" else { return}
         
-        if password.text == comPwField.text {
-            FIRAuth.auth()?.createUser(withEmail: emailField.text!, password: password.text, completion: { (user, error) in
+        if passwordField.text == comPwField.text {
+            FIRAuth.auth()?.createUser(withEmail: emailField.text!, password: passwordField.text!, completion: { (user, error) in
                 if let error = error {
                     print(error.localizedDescription)
                 }
                 
                 if let user = user {
+                    
+                    let changeRequest = FIRAuth.auth()!.currentUser!.profileChangeRequest()
+                    changeRequest.displayName = self.nameField.text!
+                    changeRequest.commitChanges(completion: nil)
+                    
                     let imageRef = self.userStorage.child("\(user.uid).jpg")
                     
                     let data = UIImageJPEGRepresentation(self.imageView.image!, 0.5)
@@ -89,6 +94,8 @@ class SignupViewController: UIViewController, UIImagePickerControllerDelegate, U
                             }
                         })
                     })
+                    
+                    uploadTask.resume()
                 }
             })
             

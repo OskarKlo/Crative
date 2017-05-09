@@ -1,0 +1,6 @@
+framework module Pods_Crative {
+  umbrella header "Pods-Crative-umbrella.h"
+
+  export *
+  module * { export * }
+}

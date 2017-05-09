@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		619D246F1EC16B0100BB518F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D246E1EC16B0100BB518F /* AppDelegate.swift */; };
-		619D24711EC16B0100BB518F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D24701EC16B0100BB518F /* ViewController.swift */; };
 		619D24741EC16B0100BB518F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D24721EC16B0100BB518F /* Main.storyboard */; };
 		619D24761EC16B0100BB518F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619D24751EC16B0100BB518F /* Assets.xcassets */; };
 		619D24791EC16B0100BB518F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D24771EC16B0100BB518F /* LaunchScreen.storyboard */; };
 		619D24811EC16BA000BB518F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619D24801EC16BA000BB518F /* GoogleService-Info.plist */; };
+		61C321631EC170AA000C7BF8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321621EC170AA000C7BF8 /* SignupViewController.swift */; };
 		A3B260B19CAD46E6EC63AB8E /* Pods_Crative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B51B9A432D48EDA6E635FDF /* Pods_Crative.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +21,12 @@
 		5BD184CEAD2060375FCC45B4 /* Pods-Crative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crative.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crative/Pods-Crative.release.xcconfig"; sourceTree = "<group>"; };
 		619D246B1EC16B0100BB518F /* Crative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619D246E1EC16B0100BB518F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		619D24701EC16B0100BB518F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		619D24731EC16B0100BB518F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619D24751EC16B0100BB518F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619D24781EC16B0100BB518F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619D247A1EC16B0100BB518F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619D24801EC16BA000BB518F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61C321621EC170AA000C7BF8 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CC4106E7503835AB1A2E5A0C /* Pods-Crative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crative/Pods-Crative.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,12 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				619D246E1EC16B0100BB518F /* AppDelegate.swift */,
-				619D24701EC16B0100BB518F /* ViewController.swift */,
 				619D24721EC16B0100BB518F /* Main.storyboard */,
 				619D24751EC16B0100BB518F /* Assets.xcassets */,
 				619D24771EC16B0100BB518F /* LaunchScreen.storyboard */,
 				619D247A1EC16B0100BB518F /* Info.plist */,
 				619D24801EC16BA000BB518F /* GoogleService-Info.plist */,
+				61C321621EC170AA000C7BF8 /* SignupViewController.swift */,
 			);
 			path = Crative;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619D24711EC16B0100BB518F /* ViewController.swift in Sources */,
+				61C321631EC170AA000C7BF8 /* SignupViewController.swift in Sources */,
 				619D246F1EC16B0100BB518F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +381,7 @@
 				619D247F1EC16B0100BB518F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,6 +18,9 @@
 		61C321691EC18C0B000C7BF8 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321681EC18C0B000C7BF8 /* UsersViewController.swift */; };
 		61C3216F1EC18E0F000C7BF8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C3216E1EC18E0F000C7BF8 /* User.swift */; };
 		61C321711EC225D9000C7BF8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321701EC225D9000C7BF8 /* UploadViewController.swift */; };
+		61C321731EC2E4DE000C7BF8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321721EC2E4DE000C7BF8 /* PostCell.swift */; };
+		61C321751EC2E5D7000C7BF8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321741EC2E5D7000C7BF8 /* Post.swift */; };
+		61C321771EC2E651000C7BF8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C321761EC2E651000C7BF8 /* FeedViewController.swift */; };
 		A3B260B19CAD46E6EC63AB8E /* Pods_Crative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B51B9A432D48EDA6E635FDF /* Pods_Crative.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		61C321681EC18C0B000C7BF8 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		61C3216E1EC18E0F000C7BF8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61C321701EC225D9000C7BF8 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		61C321721EC2E4DE000C7BF8 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		61C321741EC2E5D7000C7BF8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		61C321761EC2E651000C7BF8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CC4106E7503835AB1A2E5A0C /* Pods-Crative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crative/Pods-Crative.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,7 @@
 				61C321641EC183D4000C7BF8 /* LoginViewController.swift */,
 				61C321681EC18C0B000C7BF8 /* UsersViewController.swift */,
 				61C321701EC225D9000C7BF8 /* UploadViewController.swift */,
+				61C321761EC2E651000C7BF8 /* FeedViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -101,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				61C321661EC189ED000C7BF8 /* UserCell.swift */,
+				61C321721EC2E4DE000C7BF8 /* PostCell.swift */,
 			);
 			name = "Custom Cells";
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				61C3216E1EC18E0F000C7BF8 /* User.swift */,
+				61C321741EC2E5D7000C7BF8 /* Post.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -257,11 +266,14 @@
 			files = (
 				61C321671EC189ED000C7BF8 /* UserCell.swift in Sources */,
 				61C321711EC225D9000C7BF8 /* UploadViewController.swift in Sources */,
+				61C321771EC2E651000C7BF8 /* FeedViewController.swift in Sources */,
 				61C321651EC183D4000C7BF8 /* LoginViewController.swift in Sources */,
 				61C3216F1EC18E0F000C7BF8 /* User.swift in Sources */,
 				61C321691EC18C0B000C7BF8 /* UsersViewController.swift in Sources */,
 				61C321631EC170AA000C7BF8 /* SignupViewController.swift in Sources */,
+				61C321751EC2E5D7000C7BF8 /* Post.swift in Sources */,
 				619D246F1EC16B0100BB518F /* AppDelegate.swift in Sources */,
+				61C321731EC2E4DE000C7BF8 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

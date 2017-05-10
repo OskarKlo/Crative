@@ -35,15 +35,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc8-M3-aFA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc8-M3-aFA">
                                 <rect key="frame" x="166" y="120" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qpF-Qz-DSj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-Hy-PaB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3O-Hy-PaB">
                                 <rect key="frame" x="162" y="158" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="d8m-1a-Kqo" kind="show" id="Ufy-tG-tSd"/>
@@ -54,13 +56,10 @@
                         <constraints>
                             <constraint firstItem="hQ8-hf-6iC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8zt-dJ-nk3"/>
                             <constraint firstItem="hQ8-hf-6iC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ELx-mC-zRz"/>
-                            <constraint firstItem="b3O-Hy-PaB" firstAttribute="top" secondItem="wc8-M3-aFA" secondAttribute="bottom" constant="8" id="FBy-VX-CHv"/>
                             <constraint firstItem="wTh-jU-fxk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JNd-lk-JhT"/>
-                            <constraint firstItem="b3O-Hy-PaB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aph-T7-Dn8"/>
                             <constraint firstItem="wTh-jU-fxk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hM1-fh-UpY"/>
                             <constraint firstItem="hQ8-hf-6iC" firstAttribute="top" secondItem="wTh-jU-fxk" secondAttribute="bottom" constant="8" id="lIH-nC-fKX"/>
                             <constraint firstItem="wTh-jU-fxk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pnZ-Bl-j46"/>
-                            <constraint firstItem="wc8-M3-aFA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sqx-zd-5N7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -410,7 +409,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XEv-6y-Ple" customClass="PostCell" customModule="Crative" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="postCell" id="XEv-6y-Ple" customClass="PostCell" customModule="Crative" customModuleProvider="target">
                                         <rect key="frame" x="1" y="0.0" width="373" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -430,7 +429,7 @@
                                                         <action selector="likePressed:" destination="XEv-6y-Ple" eventType="touchUpInside" id="8hJ-Wz-yCw"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-LM-NVG">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPO-LM-NVG">
                                                     <rect key="frame" x="8" y="153" width="65.5" height="30"/>
                                                     <state key="normal" title="Unlike"/>
                                                     <connections>

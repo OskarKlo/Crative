@@ -42,7 +42,7 @@ class FeedViewController: UIViewController, UICollectionViewDelegate, UICollecti
                         self.following.append(FIRAuth.auth()!.currentUser!.uid)
                         
                         ref.child("posts").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
-                            
+                            //should be snap, maybe
                             let postsSnap = snapshot.value as! [String : AnyObject]
                             
                             for (_,post) in postsSnap {
